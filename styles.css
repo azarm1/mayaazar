@@ -54,7 +54,7 @@ h2 {
 
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 2rem;
 
 
 }
@@ -439,8 +439,9 @@ p {
 }
 
 .company {
-    font-weight: 500;
-    color: var(--gray);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--pink);
 }
 
 .date {
