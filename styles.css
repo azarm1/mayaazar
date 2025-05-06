@@ -1,6 +1,7 @@
 /* Base Styles */
 :root {
     --black-purple: #26293b;
+    --mauve-pink: #a6506b;
     --pink: #D6536D;
     --purple: #7091E6;
     --gray: #6b7280;
@@ -38,11 +39,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 6rem;
-    background: linear-gradient(90deg, var(--black-purple), var(--pink));
+    background: linear-gradient(90deg, var(--mauve-pink), var(--mauve-pink));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    display: inline-block;
+
 }
 
 h2 {
@@ -81,6 +82,12 @@ p {
     }
   }
 
+  .home-image{
+    display: inline;
+    padding: 0 9rem;
+
+  }
+
 /* Layout */
 .container {
     max-width: 1200px;
@@ -92,9 +99,6 @@ p {
     padding: 5rem 0;
 }
 
-.section:nth-child(even) {
-    background-color: var(--light-purple);
-}
 
 /* Header & Navigation */
 .header {
@@ -120,7 +124,7 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -662,7 +666,7 @@ textarea {
 /* Responsive Design */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
 
     h2 {
@@ -715,6 +719,10 @@ textarea {
 
     .timeline-item::before {
         left: -10px;
+    }
+    .home-image{
+        padding: 0;
+        display: flex;
     }
 }
 
