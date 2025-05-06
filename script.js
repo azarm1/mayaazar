@@ -67,42 +67,7 @@ fadeElements.forEach(element => {
     fadeInObserver.observe(element);
 });
 
-// Form Submission Handler
-const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Simple validation
-    if (!name || !email || !message) {
-        alert('Please fill in all fields');
-        return;
-    }
-    
-    // Add your form submission logic here
-    // For now, we'll just show a success message
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
-    
-    // Simulate form submission
-    setTimeout(() => {
-        submitBtn.textContent = 'Message Sent!';
-        contactForm.reset();
-        
-        setTimeout(() => {
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText;
-        }, 2000);
-    }, 1500);
-});
 
 // Update header background on scroll
 const header = document.querySelector('.header');
@@ -152,7 +117,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Add typing effect to the intro text
 const introText = document.querySelector('.intro-text');
 if (introText) {
     const text = introText.textContent;

@@ -69,6 +69,17 @@ p {
     margin: 0 auto 2rem;
     color: var(--gray);
 }
+.intro-text::after {
+    content: '|';
+    animation: blink 1s steps(2, start) infinite;
+    margin-left: 4px;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
 
 /* Layout */
 .container {
